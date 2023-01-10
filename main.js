@@ -116,7 +116,7 @@ liColors.forEach((li) => {
 });
 
 let moodStatus;
-let moodStyle = JSON.parse(localStorage.bodyStyle);
+let moodStyle = JSON.parse(localStorage.getItem("bodyStyle"));
 let icon = document.querySelector(".mood-icon .fa-solid");
 if (moodStyle === "dark") {
   document.body.classList.add("dark");
